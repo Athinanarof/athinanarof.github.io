@@ -54,11 +54,8 @@ header.hero{ padding:4rem 0 2.6rem; border-bottom:3px double var(--rule-strong);
 h1{ font-family:var(--serif); font-weight:700; font-size:clamp(2.2rem,5.6vw,3.4rem); line-height:1.04; margin:0; text-wrap:balance; letter-spacing:-.01em; }
 .subhead{ font-size:1.08rem; color:var(--ink-muted); margin:1.1rem 0 0; max-width:36rem; }
 
-.range-row{ display:flex; flex-wrap:wrap; gap:.5rem; margin:1.6rem 0 0; padding:0; list-style:none; }
-.range-row li{
-  font-family:var(--mono); font-size:.78rem; color:var(--ink); background:var(--surface);
-  border:1px solid var(--rule-strong); padding:.35rem .7rem; white-space:nowrap;
-}
+.range-row{ display:flex; flex-wrap:wrap; gap:.4rem 1.3rem; margin:1.4rem 0 0; padding:0; list-style:none; }
+.range-row li{ font-family:var(--mono); font-size:.82rem; color:var(--ink-muted); white-space:nowrap; }
 .range-row li b{ color:var(--red); font-weight:600; }
 
 .contact-row{ display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.8rem; }
