@@ -1,40 +1,40 @@
 :root{
-  --paper:#f5f4f0;
-  --surface:#ffffff;
-  --surface-2:#eae7e0;
-  --ink:#33475a;
-  --ink-muted:#5f7182;
-  --ink-faint:#93a0ac;
-  --rule:#ded9cf;
-  --rule-strong:#c2bcae;
-  --red:#b3673f;
-  --red-strong:#8a4e2d;
-  --red-soft:#f3e6dc;
-  --on-accent:#ffffff;
-  --feature:#3f7d68;
-  --shadow:0 1px 2px rgba(30,35,40,.07);
+  --paper:#f7f2f1;
+  --surface:#fffdfc;
+  --surface-2:#ece1e2;
+  --ink:#3a222b;
+  --ink-muted:#6b5560;
+  --ink-faint:#a4909a;
+  --rule:#e6dbda;
+  --rule-strong:#cbb0b5;
+  --red:#8c4a5a;
+  --red-strong:#6b3f4a;
+  --red-soft:#f2e2e4;
+  --on-accent:#f7f2f1;
+  --feature:#a9812c;
+  --shadow:0 1px 2px rgba(30,20,25,.07);
   --serif:"Spectral", Georgia, "Times New Roman", serif;
   --sans:"Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, "SF Mono", monospace;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#16222c; --surface:#1c2b37; --surface-2:#223342;
-    --ink:#eef2f5; --ink-muted:#aebdc9; --ink-faint:#95a6b3;
-    --rule:#2c3f4d; --rule-strong:#3e5566;
-    --red:#e08a5c; --red-strong:#f0a878; --red-soft:#3a2417;
-    --on-accent:#241505;
-    --feature:#6fc9a8;
+    --paper:#1f1517; --surface:#2b1d20; --surface-2:#362428;
+    --ink:#f5e9ea; --ink-muted:#cdb3b8; --ink-faint:#a58c90;
+    --rule:#3d2a2d; --rule-strong:#55393e;
+    --red:#d98a9a; --red-strong:#e6a3b0; --red-soft:#3f262a;
+    --on-accent:#241318;
+    --feature:#d9b25c;
     --shadow:0 1px 3px rgba(0,0,0,.45);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#16222c; --surface:#1c2b37; --surface-2:#223342;
-  --ink:#eef2f5; --ink-muted:#aebdc9; --ink-faint:#95a6b3;
-  --rule:#2c3f4d; --rule-strong:#3e5566;
-  --red:#e08a5c; --red-strong:#f0a878; --red-soft:#3a2417;
-  --on-accent:#241505;
-  --feature:#6fc9a8;
+  --paper:#1f1517; --surface:#2b1d20; --surface-2:#362428;
+  --ink:#f5e9ea; --ink-muted:#cdb3b8; --ink-faint:#a58c90;
+  --rule:#3d2a2d; --rule-strong:#55393e;
+  --red:#d98a9a; --red-strong:#e6a3b0; --red-soft:#3f262a;
+  --on-accent:#241318;
+  --feature:#d9b25c;
   --shadow:0 1px 3px rgba(0,0,0,.45);
 }
 
@@ -130,12 +130,12 @@ footer{ padding:2.6rem 0 4rem; color:var(--ink-faint); font-size:.82rem; }
 footer .wrap{ border-top:1px solid var(--rule); padding-top:1.4rem; }
 .scan-section{ padding:3.2rem 0; }
 .scan-card{
-  background:#1c2b37; color:#eef2f5; border-radius:12px; padding:2.4rem 1.5rem;
+  background:#2b1d20; color:#f5e9ea; border-radius:12px; padding:2.4rem 1.5rem;
   display:flex; flex-direction:column; align-items:center; gap:1rem; text-align:center;
 }
 .scan-card .scan-text{ font-family:var(--serif); font-size:1.1rem; font-weight:600; }
-.scan-card .qr-code{ background:#f5f4f0; border-radius:8px; padding:14px; line-height:0; }
-.scan-card .scan-url{ font-family:var(--mono); font-size:.85rem; color:#e0a878; letter-spacing:.03em; }
+.scan-card .qr-code{ background:#f7f2f1; border-radius:8px; padding:14px; line-height:0; }
+.scan-card .scan-url{ font-family:var(--mono); font-size:.85rem; color:#d98a9a; letter-spacing:.03em; }
 
 @media (max-width:640px){
   header.hero{ padding:2.6rem 0 2rem; }

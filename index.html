@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="0DfJwNd13KkJWlblIvGUZkLCx2v-avhG7yDv0PlNdNk" />
 <title>Araceli Sánchez | Senior Software Engineer</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2333475a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23e08a5c' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233a222b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%238c4a5a' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
 <meta name="description" content="Senior software engineer who took a fintech platform through three .NET migrations over five years, later acquired by AdvicePay in 2025. Also works across federal compliance, language internals, and AI safety.">
 <link rel="canonical" href="https://athinanarof.github.io/">
 
@@ -58,10 +58,11 @@
       </div>
     </div>
     <h1>Built a platform worth acquiring.</h1>
-    <p class="subhead">I took a fintech platform through three .NET migrations over five years. AdvicePay bought it in 2025.</p>
+    <p class="subhead">Finance teams used to chase advisor payouts across spreadsheets. I helped build the platform that replaced that. AdvicePay bought it in 2025. Same kind of problem, different domains, below.</p>
 
     <ul class="range-row">
       <li><b>Fintech</b> · Product Acquired 2025</li>
+      <li><b>Land &amp; royalty</b> · Oil &amp; gas SaaS</li>
       <li><b>Federal compliance</b> · EPA UIC</li>
       <li><b>Language internals</b> · OCaml → F#</li>
       <li><b>AI/NLP</b> · Youth safety</li>
@@ -94,7 +95,7 @@
     </div>
 
     <div class="prose">
-      <p>Five years, three .NET migrations, and one multitenant system that roughly 95 firms depended on, with load times across different reports and dashboards cut by an average of 40%. I learned the fee-billing domain well enough to know that the order a payout percentage gets applied changes what an advisor actually takes home. Reliable infrastructure and a real understanding of what advisors needed, together, made the platform valuable enough for AdvicePay to acquire in 2025.</p>
+      <p>Five years, three .NET migrations, and one multitenant system that roughly 95 firms depended on, with load times across different reports and dashboards cut by an average of 40%. Finance teams used to chase payout formulas across spreadsheets, one wrong reference and an advisor's paycheck was off. I helped replace that with one auditable calculation engine that finance and advisors both trust. Reliable infrastructure and a real understanding of what advisors needed, together, made the platform valuable enough for AdvicePay to acquire in 2025.</p>
     </div>
 
     <div class="close-line">Acquired by <b>AdvicePay</b> on May 5, 2025. Their first acquisition. <a href="https://blog.advicepay.com/press/advicepay-acquires-advisorbob-a-leading-advisor-compensation-platform" target="_blank" rel="noopener">Read the announcement ↗</a></div>
@@ -104,19 +105,28 @@
   <section class="entry" id="range">
     <div class="entry-head">
       <div class="entry-head-left">
-        <h2>Three other domains, same depth</h2>
+        <h2>Same depth, different domains</h2>
       </div>
     </div>
-    <p class="kicker">Different people, different problems, same level of care.</p>
+    <p class="kicker">Different stacks, same instinct: understand the business and the people using it before writing the code.</p>
 
     <div class="secondary-grid">
       <div class="sec-card">
         <div class="sec-rail"></div>
         <div class="sec-body">
+          <div class="sec-tag">AWS serverless architecture</div>
+          <h3>Bensis</h3>
+          <p>Multi-tenant SaaS platform for land and royalty administration in oil &amp; gas, built fully serverless on AWS. Owned the water and gas analysis modules end to end, and replaced manual lab-report entry with a bulk-upload pipeline that feeds straight into the platform's royalty allocation engine.</p>
+          <div class="stack-row"><span>Lambda</span><span>API Gateway</span><span>Cognito</span><span>RDS/PostgreSQL</span><span>DynamoDB</span><span>S3/CloudFront</span><span>SQS</span><span>Terraform</span><span>GraphQL</span><span>Vue 3</span></div>
+        </div>
+      </div>
+      <div class="sec-card">
+        <div class="sec-rail"></div>
+        <div class="sec-body">
           <div class="sec-tag">Federal regulatory compliance</div>
           <h3>MiSTAR (Michigan EGLE)</h3>
-          <p>Full-stack features for a state oil-and-gas regulatory platform, under EPA Underground Injection Control program requirements. Role-based workflows for industry and agency users, compliance-driven QA and code review.</p>
-          <div class="stack-row"><span>TypeScript</span><span>C#</span><span>.NET Core</span><span>SQL Server</span><span>Vue 3</span><span>GraphQL</span><span>Python</span><span>PostgreSQL</span></div>
+          <p>Government-facing regulatory platform for state oil and gas agencies. Built the Permit to Construct module for Class VI carbon sequestration wells, under EPA Underground Injection Control program requirements, a program still taking shape as states take on primacy.</p>
+          <div class="stack-row"><span>C#</span><span>.NET Core</span><span>ASP.NET Core</span><span>SQL Server</span><span>Vue 3</span><span>TypeScript</span></div>
         </div>
       </div>
       <div class="sec-card">
