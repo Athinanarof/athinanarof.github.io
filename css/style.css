@@ -50,6 +50,8 @@ header.hero{ padding:4rem 0 2.6rem; border-bottom:3px double var(--rule-strong);
 .eyebrow{ font-family:var(--mono); font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:1.1rem; }
 .masthead-id{ display:flex; align-items:center; gap:.7rem; margin-bottom:1.1rem; }
 .masthead-id .eyebrow{ margin-bottom:0; }
+.masthead-text{ display:flex; flex-direction:column; gap:.15rem; }
+.masthead-text .name{ font-family:var(--serif); font-weight:600; font-size:1.05rem; color:var(--ink); }
 .avatar{ width:42px; height:42px; border-radius:50%; border:1px solid var(--rule-strong); object-fit:cover; }
 h1{ font-family:var(--serif); font-weight:700; font-size:clamp(2.2rem,5.6vw,3.4rem); line-height:1.04; margin:0; text-wrap:balance; letter-spacing:-.01em; }
 .subhead{ font-size:1.08rem; color:var(--ink-muted); margin:1.1rem 0 0; max-width:36rem; }
