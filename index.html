@@ -6,13 +6,13 @@
 <meta name="google-site-verification" content="0DfJwNd13KkJWlblIvGUZkLCx2v-avhG7yDv0PlNdNk" />
 <title>Araceli Sánchez | Senior Software Engineer</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233a222b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%238c4a5a' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
-<meta name="description" content="Senior software engineer who took a fintech platform through three .NET migrations over five years, later acquired by AdvicePay in 2025. Also works across federal compliance, language internals, and AI safety.">
+<meta name="description" content="Senior software engineer who took a fintech platform through three .NET migrations over five years, later acquired by AdvicePay in 2025. Also works across regulatory compliance, language internals, and applied AI/NLP.">
 <link rel="canonical" href="https://athinanarof.github.io/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://athinanarof.github.io/">
 <meta property="og:title" content="Araceli Sánchez | Senior Software Engineer">
-<meta property="og:description" content="Senior software engineer who took a fintech platform through three .NET migrations over five years, later acquired by AdvicePay in 2025. Also works across federal compliance, language internals, and AI safety.">
+<meta property="og:description" content="Senior software engineer who took a fintech platform through three .NET migrations over five years, later acquired by AdvicePay in 2025. Also works across regulatory compliance, language internals, and applied AI/NLP.">
 <meta property="og:image" content="https://athinanarof.github.io/assets/avatar.jpg">
 
 <meta name="twitter:card" content="summary">
@@ -63,9 +63,10 @@
     <ul class="range-row">
       <li><b>Fintech</b> · Product Acquired 2025</li>
       <li><b>Production allocation</b> · Oil &amp; gas SaaS</li>
-      <li><b>Federal compliance</b> · EPA UIC</li>
+      <li><b>Regulatory compliance</b> · EPA UIC</li>
       <li><b>Language internals</b> · OCaml → F#</li>
       <li><b>AI/NLP</b> · Youth safety</li>
+      <li><b>LLM pipelines</b> · Job data</li>
     </ul>
 
     <div class="contact-row">
@@ -83,7 +84,7 @@
         <h2>AdvisorBOB</h2>
       </div>
     </div>
-    <p class="kicker">Advisor compensation &amp; fee-billing platform for RIA firms. Technical lead, 2021 to 2023, then a core contributor after moving full-time onto EPA regulatory work.</p>
+    <p class="kicker">Advisor compensation &amp; fee-billing platform for RIA firms. Technical lead at Ocean Ring Technologies since 2020, across the platform's five-year lifecycle.</p>
 
     <div class="stack-row" style="margin-bottom:1.4rem;"><span>C#</span><span>.NET 8</span><span>ASP.NET Core</span><span>Entity Framework</span><span>Angular</span><span>TypeScript</span><span>Azure Front Door</span><span>Service Bus</span><span>SQL Elastic Pool</span><span>Key Vault</span><span>GitHub Actions</span><span>Docker</span></div>
 
@@ -114,6 +115,24 @@
       <div class="sec-card">
         <div class="sec-rail"></div>
         <div class="sec-body">
+          <div class="sec-tag">AI / NLP for youth safety</div>
+          <h3>Community safety platform</h3>
+          <p>Trained a Bidirectional GRU sentiment classifier on 1.6M tweets (~80.5% validation accuracy on 480K held-out samples), then a BiLSTM + CNN emotion classifier on a weakly supervised dataset labeled from hashtag and emoji signals. Adapted the models into a production pipeline that flags harmful content on student social networks across multiple school districts. Client name withheld given the age of the users involved.</p>
+          <div class="stack-row"><span>Python</span><span>TensorFlow/Keras</span><span>NLTK</span><span>Pandas</span><span>Azure</span></div>
+        </div>
+      </div>
+      <div class="sec-card">
+        <div class="sec-rail"></div>
+        <div class="sec-body">
+          <div class="sec-tag">AI / LLM data pipeline</div>
+          <h3>Basecamp Jobs · outdoor industry job board</h3>
+          <p>Built a nightly AI job-ingestion pipeline on Azure Functions that scrapes JavaScript-rendered career pages with Firecrawl, alongside ATS feeds, from 13 outdoor-industry employers, and publishes the results automatically to the Basecamp job board. Raw postings are enriched into structured job records with Azure OpenAI, combining LLM extraction with deterministic validation and matching against the platform's canonical taxonomy, so the model never guesses fields a posting doesn't state.</p>
+          <div class="stack-row"><span>Python</span><span>Azure Functions</span><span>Azure OpenAI</span><span>Firecrawl</span><span>Table Storage</span><span>GitHub Actions</span></div>
+        </div>
+      </div>
+      <div class="sec-card">
+        <div class="sec-rail"></div>
+        <div class="sec-body">
           <div class="sec-tag">AWS serverless architecture</div>
           <h3>Bensis</h3>
           <p>Multi-tenant SaaS platform for oil &amp; gas production allocation and measurement, built fully serverless on AWS. Owned the water and gas analysis features end to end, and replaced manual lab-report entry with a bulk-upload pipeline that feeds straight into the platform's gas and water allocation calculations.</p>
@@ -123,7 +142,7 @@
       <div class="sec-card">
         <div class="sec-rail"></div>
         <div class="sec-body">
-          <div class="sec-tag">Federal regulatory compliance</div>
+          <div class="sec-tag">Regulatory compliance</div>
           <h3>MiSTAR (Michigan EGLE)</h3>
           <p>Government-facing regulatory platform for state oil and gas agencies. Built the Permit to Construct module for Class VI carbon sequestration wells, under EPA Underground Injection Control program requirements, a program still taking shape as states take on primacy.</p>
           <div class="stack-row"><span>C#</span><span>.NET Core</span><span>ASP.NET Core</span><span>SQL Server</span><span>Vue 3</span><span>TypeScript</span></div>
@@ -134,17 +153,8 @@
         <div class="sec-body">
           <div class="sec-tag">Language internals</div>
           <h3>Darklang</h3>
-          <p>Contributed to Darklang's production backend rewrite from OCaml to F#, driven by access to a much larger ecosystem of libraries and tooling and better handling of types and maps than OCaml offered. <a href="https://blog.darklang.com/backend-rewrite-complete/" target="_blank" rel="noopener">Read about the finished port ↗</a></p>
+          <p>Contributed to Darklang's production backend rewrite from OCaml to F#, working on core interpreter and runtime components and using type-system and AST knowledge to preserve exact OCaml runtime semantics. <a href="https://blog.darklang.com/backend-rewrite-complete/" target="_blank" rel="noopener">Read about the finished port ↗</a></p>
           <div class="stack-row"><span>F#</span><span>OCaml</span><span>.NET</span></div>
-        </div>
-      </div>
-      <div class="sec-card">
-        <div class="sec-rail"></div>
-        <div class="sec-body">
-          <div class="sec-tag">AI / NLP for youth safety</div>
-          <h3>Confidential client · student safety platform</h3>
-          <p>Built an NLP model combining sentiment and emotion analysis (VADER, NRC Emotion Lexicon) to flag harmful content in student social media conversations. Client name withheld given the age of the users involved.</p>
-          <div class="stack-row"><span>Python</span><span>Pandas</span><span>NLTK</span><span>VADER</span></div>
         </div>
       </div>
     </div>
